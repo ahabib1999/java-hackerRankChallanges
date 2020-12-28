@@ -12,6 +12,8 @@ public class Main {
         ReturnArea example6 = new ReturnArea();
         FirstNonRepeatingChar example7 = new FirstNonRepeatingChar();
         GradingStudents example8 = new GradingStudents();
+        AbslouteDifference example9 = new AbslouteDifference();
+        SimpleCipher example10 = new SimpleCipher();
 
         /*
          * //example1.countingValleys(8, "UDDDUDUU");
@@ -23,7 +25,7 @@ public class Main {
          * example3.countingRepeatedCharacter("abcac", num);
          */
 
-        int[] arr = { 1, 2, 5, 3, 7, 8, 6, 4 };
+        int[][] arr = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, -9 } };
 
         // example5.count(arr);
 
@@ -36,18 +38,25 @@ public class Main {
          * System.out.println(resultChar);
          */
 
-        List<Integer> grades = new ArrayList<Integer>();
+        /*
+         * List<Integer> grades = new ArrayList<Integer>();
+         * 
+         * grades.add(0); grades.add(38); grades.add(45); grades.add(67);
+         * grades.add(74);
+         */
 
-        grades.add(0);
-        grades.add(38);
-        grades.add(45);
-        grades.add(67);
-        grades.add(74);
+        /*
+         * grades = example8.willRound(grades);
+         * 
+         * for (int i = 0; i < grades.size(); i++) { System.out.println(grades.get(i));
+         * }
+         */
 
-        grades = example8.willRound(grades);
+        /*
+         * int absDiff = example9.getDifference(arr); System.out.println(absDiff);
+         */
 
-        for (int i = 0; i < grades.size(); i++) {
-            System.out.println(grades.get(i));
-        }
+        example10.simpleCipher("JEDI", 55);
+        // A
     }
 }
